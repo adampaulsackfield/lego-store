@@ -1,7 +1,78 @@
+@use '../../assets/sass/variables' as *;
+
 .sidebar {
-	background-color: blue;
+	background-color: $primary-background;
 
 	height: 100vh;
-	// width: 20vw;
 	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
 }
+
+// HEADER START
+.header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid 2px $secondary-background;
+	border-right: solid 2px $secondary-background;
+}
+
+.logo {
+	max-width: 50px;
+	height: 50px;
+	background-color: $secondary-background;
+	border-radius: 100%;
+	padding: 0.4rem;
+	margin-right: 1rem;
+}
+
+.brand {
+	display: flex;
+	flex-direction: column;
+}
+
+.text {
+	font-family: $font-sans;
+	color: $primary-text;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+.subtext {
+	color: $secondary-text;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-size: 0.75rem;
+	text-align: center;
+}
+// HEADER END
+
+// BREADCRUMBS START
+.breadCrumbs {
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1rem;
+	border-bottom: solid 2px $secondary-background;
+	border-right: solid 2px $secondary-background;
+}
+
+.main {
+	color: red;
+}
+
+.separator {
+	color: red;
+}
+
+.sub {
+	color: $secondary-text;
+}
+// BREADCRUMBS END
