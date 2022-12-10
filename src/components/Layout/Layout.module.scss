@@ -1,0 +1,12 @@
+.layout {
+	background-color: red;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 4;
+}
