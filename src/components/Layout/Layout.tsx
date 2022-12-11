@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import CatalogueContainer from '../../containers/CatalogueContainer';
 
 // Components
@@ -15,6 +16,11 @@ const Layout: React.FC = (): ReactElement => {
 
 			<main className={styles.main}>
 				<Navbar />
+
+				<Routes>
+					<Route path='/' element={'Hi'} />
+					<Route path='/toys' element={'<About />'} />
+				</Routes>
 
 				<CatalogueContainer />
 			</main>
